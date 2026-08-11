@@ -1,26 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,400;1,500;1,600&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@source "../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-neon-blue: #e8702a;
+  --color-neon-dark: #d2611f;
+  --color-glass: rgba(15, 23, 42, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --font-sans: 'Inter', sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
 }
+
+* { font-family: 'Inter', sans-serif; }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), sans-serif;
+  letter-spacing: -0.02em;
 }
+
+@layer utilities {
+  .font-playfair { font-family: 'Playfair Display', serif; }
+}
+
+/* Custom Scrollbar for a sleek look */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #475569; }
+
+.glass-panel {
+  background: var(--color-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-glass-border);
+}
+
+@keyframes heroReveal { 0%{opacity:0;transform:translateY(28px);filter:blur(12px)} 100%{opacity:1;transform:translateY(0);filter:blur(0)} }
+@keyframes heroFadeUp { 0%{opacity:0;transform:translateY(20px)} 100%{opacity:1;transform:translateY(0)} }
+@keyframes heroZoom { 0%{transform:scale(1.12)} 100%{transform:scale(1)} }
+.hero-anim { opacity:0; animation-fill-mode:forwards; animation-timing-function:cubic-bezier(0.16,1,0.3,1); }
+.hero-reveal { animation-name:heroReveal; animation-duration:1.1s; }
+.hero-fade { animation-name:heroFadeUp; animation-duration:1s; }
+.hero-zoom { animation:heroZoom 1.8s cubic-bezier(0.16,1,0.3,1) forwards; }
+@media (prefers-reduced-motion: reduce){ .hero-anim,.hero-zoom{ animation:none; opacity:1; } }

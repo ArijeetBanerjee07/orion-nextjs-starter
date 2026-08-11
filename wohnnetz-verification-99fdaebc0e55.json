@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "wohnnetz-verification",
+  "private_key_id": "99fdaebc0e55885a2ee89bab5c8bb700cb89e7bf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVS6GVYqamFXay\nxgun29Z+c2jX3fqRXligMkD/G3djO89gGO7Pnd5uKFwyyyOOLvnSBMi+ueDYaV8u\nk072bp/fd9tx9mc7b6GRId6cmMFOtVo1jxu861mL6eCeDAWywO7kzTY8F4uDyj70\nFz3hI2NQO89m/VQ/oTSQo6hBqRVYKnBeRIOgl3P8AESSd3NpnVuXrE91M9O2b33t\ne7tlFprW77EY3Io8eugmi7iFF59SEyTt4whZLHAVUmqIckFhp/teDvVv9X+Iyme9\nVFT9onImzkBdVuX1F2x6It3VKbVS+XkhmGwkuMg7ncXCAgoaoB8Sko+gUCG9RwYa\nh05fOk3JAgMBAAECggEATbt+a77EFQsFcymR3d7UUMkmkGUpiAjmK5uk7FPKMrP9\nY3wyrB9QjLzQvQIjNxIPoWZ08m0zcCsWsRamVFEEmqBHrUSrYpHQQ+AgDNnuuQyG\nj7ZT2Ym73K2jWnXvLbH6XhAbj9LU2Xa/cp11w7Lt4rOpZlM0fOv3CC9chnFkgfhr\nG2+m5SdqdSonyIDMjedCv9HsM2o9Gi7qvz8mt8eLhwDsUkLDpBBIJUK+rBSfQGSw\nAIdSfuIFfHB3rKDfjTIQeKbi4T/zp3bWXiljPENvnxRGrFxW7u60ys9svXj5jxxv\nPW9azpHKXz3MFcSH+w7hNXE31SmuBCrScxsc9gZTMQKBgQDtc4f7r06K12GJAIba\n6U6IGvAm/QfwGi1Q31DMrEYXAPEND6keZyst7I8CM2wA1gsw/c0cWyWYw3JWALTy\nbLbROiHYnMQqj6YOtyJ4cbto69v15D9MT9P9bn/pfkXI6cA0xW/5APyaf3cYx7Tf\nswJzCyB7xOLlM6Oxn/Jx8vpMYwKBgQDl9Qobl3Bx0ZwQeYnQzvvFvA1yXqKk7Jqd\nZ5URNDlkVtNuXdf+Y4ZjsMJ9exgY4On609bHcKp8nXvh+F0DAUW8p3hfPDQQ8EiD\ngGNSsHH913rpRWWYaPcUDQGU+m+S+aT74hF3ffpr5BuUHZR9MtmxTJM/kB+6shob\nAdT07zzG4wKBgCVISIeaBOkD3EqYjJP+odf48tAMVpy6X3cdOSCJxA+ElFSKqvEd\nHch+Jg4gaMrQ0L0GfJgBL6wGtAMQ5VhS/XloeTv7kUlleJtC4eSrZtOYhNbc2Ztv\nxUc7fFX6/5YGLambfnNIVmEjtl1rrdiZ0L6jdpw4U6/NJdyT0otVrTslAoGBAJ7t\nodS771zaj0/bj+Iei2d3tptqyGHPnHRZGG9RdrDgSTQn65XHVyQjD+gFYPwgxdUy\n/2fLeCiz9uCP9EiVYosl+01moF1sk9E+tGZ7x+y2Nh5ude7F7K2Q55z9EIu1uc7T\nyVqaWK6kcmMFppB4ynd9Au+VPjibyusLcxDtH0YdAoGBAK86LWKh0wCsJwhPEM2e\njnetB21JLlXakIpFrhJg3N2TgCm4sBxgNyKfUNgr5+z7CwLpMHPtnTezu9aoLOFq\nkV4BGUeR6RvKLlCixQqxbKCRG2vxJUJeL4tvGp46gN1md4Rk8whloXL3EavuStym\ndBNk2KP39xO8uZE+oo40upcZ\n-----END PRIVATE KEY-----\n",
+  "client_email": "drive-editor@wohnnetz-verification.iam.gserviceaccount.com",
+  "client_id": "117145149188696272476",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/drive-editor%40wohnnetz-verification.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

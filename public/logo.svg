@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <!-- Background Glow -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0b112c" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#02040a" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Outer Ring Glow -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Intense Iris Glow -->
+    <filter id="irisGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1" />
+      <feGaussianBlur stdDeviation="2" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Iris Radial Gradient -->
+    <radialGradient id="irisGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" />
+      <stop offset="20%" stop-color="#0033aa" />
+      <stop offset="60%" stop-color="#0088ff" />
+      <stop offset="85%" stop-color="#4ed4ff" />
+      <stop offset="100%" stop-color="#002266" />
+    </radialGradient>
+    
+    <!-- Individual Iris Fiber Mask/Pattern Style -->
+    <radialGradient id="fiberGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="30%" stop-color="#4ed4ff" stop-opacity="1" />
+      <stop offset="70%" stop-color="#0055ff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#001133" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Dark Tech Background (Optional: remove this <rect> for a transparent PNG background) -->
+  <rect width="100%" height="100%" fill="url(#bgGlow)" />
+
+  <g transform="translate(300, 300)">
+    <!-- ================= OUTER TECH RINGS ================= -->
+    <!-- Outer Fine Tick Ring -->
+    <circle r="220" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-opacity="0.3" />
+    
+    <!-- Main Technical Calibration Ring (The Ticks) -->
+    <circle r="210" fill="none" stroke="#ffffff" stroke-width="12" stroke-dasharray="2 7.43" stroke-opacity="0.8" filter="url(#glow)" />
+    
+    <!-- Inner Fine Tech Ring -->
+    <circle r="195" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4" />
+    <circle r="191" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="20 40" stroke-opacity="0.2" />
+
+    <!-- ================= THE IRIS (FIBER LAYER) ================= -->
+    <!-- Base Iris Gradient -->
+    <circle r="175" fill="url(#irisGrad)" filter="url(#irisGlow)" opacity="0.9"/>
+
+    <!-- Generated Tech/Organic Iris Lines -->
+    <g filter="url(#irisGlow)" opacity="0.85">
+      <!-- Deep Fibers (Simulated via dense multi-stroke pattern) -->
+      <circle r="130" fill="none" stroke="#00ffff" stroke-width="70" stroke-dasharray="0.5 2" opacity="0.3" />
+      <circle r="135" fill="none" stroke="#ffffff" stroke-width="40" stroke-dasharray="1 3.5" opacity="0.4" transform="rotate(15)" />
+      <circle r="140" fill="none" stroke="#0055ff" stroke-width="60" stroke-dasharray="2 5" opacity="0.6" transform="rotate(45)" />
+      <circle r="120" fill="none" stroke="#4ed4ff" stroke-width="50" stroke-dasharray="1 2.5" opacity="0.5" transform="rotate(82)" />
+      <circle r="150" fill="none" stroke="#0022aa" stroke-width="30" stroke-dasharray="3 6" opacity="0.7" transform="rotate(120)" />
+      
+      <!-- Sharp Striations -->
+      <circle r="110" fill="none" stroke="#ffffff" stroke-width="25" stroke-dasharray="0.7 4" opacity="0.6" transform="rotate(200)" />
+      <circle r="155" fill="none" stroke="#4ed4ff" stroke-width="20" stroke-dasharray="1.5 8" opacity="0.5" transform="rotate(285)" />
+    </g>
+
+    <!-- Outer Smooth Iris Edge Ring -->
+    <circle r="175" fill="none" stroke="#4ed4ff" stroke-width="3" stroke-opacity="0.5" filter="url(#glow)"/>
+
+    <!-- ================= THE PUPIL ================= -->
+    <!-- Deep Black Center Core -->
+    <circle r="75" fill="#03050d" />
+    <circle r="72" fill="#000000" />
+    
+    <!-- Inner Pupil Rim Soft Glow -->
+    <circle r="74" fill="none" stroke="#0088ff" stroke-width="1.5" stroke-opacity="0.7" filter="url(#glow)" />
+  </g>
+</svg>
